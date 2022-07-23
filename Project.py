@@ -31,7 +31,7 @@ X[:, 3] = labelencoder.fit_transform(X[:, 3])
 
 from sklearn.model_selection import train_test_split
 
-x_train,x_test,y_train,y_test = train_test_split(X,y,train_size=0.7,random_state=0)
+x_train,x_test,y_train,y_test = train_test_split(X,y,test_size =0.2,random_state=0)
 
 from sklearn.linear_model import LinearRegression
 
