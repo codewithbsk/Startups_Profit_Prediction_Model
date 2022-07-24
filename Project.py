@@ -26,7 +26,7 @@ y = dataset.iloc[:, 3].values
 
 from sklearn.preprocessing import LabelEncoder
 labelencoder = LabelEncoder()
-X[:, 3] = labelencoder.fit_transform(X[:, 3])
+X[:, 2] = labelencoder.fit_transform(X[:, 2])
 
 
 from sklearn.model_selection import train_test_split
