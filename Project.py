@@ -22,11 +22,11 @@ dataset = pd.read_csv("50_Startups.csv")
 
 # spliting Dataset in Dependent & Independent Variables
 X = dataset.iloc[:, :-1].values
-y = dataset.iloc[:, 3].values
+y = dataset.iloc[:, 4].values
 
 from sklearn.preprocessing import LabelEncoder
 labelencoder = LabelEncoder()
-X[:, 2] = labelencoder.fit_transform(X[:, 2])
+X[:, 3] = labelencoder.fit_transform(X[:, 3])
 
 
 from sklearn.model_selection import train_test_split
@@ -61,11 +61,11 @@ option = st.sidebar.selectbox(
 
 st.write('You selected:', option)
 
-if option == "Pune":
+if option == "Mumbai":
     optn = 0
-if option == "Banglore":
+if option == "Gujrat":
     optn = 1
-if option == "Delhi":
+if option == "Kolkata":
     optn = 2   
 
 y_pred = model.predict([[Marketing_cost_Spend,Administration_cost,rnd_cost,optn]])
