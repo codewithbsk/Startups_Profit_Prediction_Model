@@ -57,7 +57,7 @@ st.write('The current number is ', Marketing_cost_Spend)
 
 option = st.sidebar.selectbox(
      'Select the region',
-     ('Delhi', 'Banglore', 'Pune'))
+     ('Kolkata', 'Gujrat', 'Mumbai'))
 
 st.write('You selected:', option)
 
