@@ -22,7 +22,7 @@ dataset = pd.read_csv("50_Startups.csv")
 
 # spliting Dataset in Dependent & Independent Variables
 X = dataset.iloc[:, :-1].values
-y = dataset.iloc[:, 4].values
+y = dataset.iloc[:, 3].values
 
 from sklearn.preprocessing import LabelEncoder
 labelencoder = LabelEncoder()
